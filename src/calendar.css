@@ -1,0 +1,143 @@
+/* General Calendar Styles */
+.fc {
+  font-family: "Arial", sans-serif; /* Adjust to your app's font */
+  font-size: 1rem; /* Set the base font size */
+  border-radius: 0.5rem; /* Rounded corners for the calendar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the calendar */
+}
+
+/* Calendar Header */
+.fc-toolbar {
+  background-color: #2d2d2d; /* Dark background for the header */
+  color: #fff; /* White text */
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+  font-weight: 600;
+}
+
+/* Title of the calendar */
+.fc-toolbar-title {
+  font-size: 1.5rem; /* Make the title a bit larger */
+  color: #fff;
+  text-align: center;
+}
+
+/* Previous/Next Button Styles */
+.fc-button {
+  background-color: #8b4513; /* Brown color */
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.fc-button:hover {
+  background-color: #704214; /* Slightly darker brown on hover */
+}
+
+/* Weekdays in the Header */
+.fc-col-header-cell {
+  background-color: #333;
+  height: 10px;
+  color: #fff;
+  /* padding: 0.75rem; */
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Day Grid (Month View) Styles */
+.fc-daygrid-day {
+  padding: 1rem 0.5rem;
+  color: #333; /* Default text color for days */
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 500;
+  color: white;
+  height: 5px;
+  font-size: 1rem;
+}
+
+/* Active Day (When clicked or selected) */
+.fc-daygrid-day.fc-day-today {
+  background-color: #ffd700; /* Gold background for today */
+  color: #000;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #e6e6e6; /* Light gray background on hover */
+}
+
+/* Event Styles */
+.fc-event {
+  background-color: #8b4513; /* Brown color for events */
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.fc-event:hover {
+  background-color: #704214; /* Darker brown on hover */
+}
+
+/* Event Tooltip on Hover */
+.fc-event-title {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Week View (Timegrid) */
+.fc-timegrid-slot {
+  background-color: #f4f4f4; /* Light gray slots */
+  border-bottom: 1px solid #ddd;
+}
+
+.fc-timegrid-slot-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* List View Styling */
+.fc-list-event {
+  padding: 0.5rem;
+  background-color: #8b4513; /* Brown */
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fc-list-event:hover {
+  background-color: #704214; /* Darker brown on hover */
+}
+
+/* Resizable Event Handles */
+.fc-resizer {
+  background-color: #555; /* Dark color for the resizer handle */
+  border-radius: 0.25rem;
+  width: 8px;
+  height: 8px;
+}
+
+/* Day Names (Mon, Tue, etc.) */
+.fc-day-name {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Custom Day Highlighting */
+.fc-daygrid-day.fc-day-saturday,
+.fc-daygrid-day.fc-day-sunday {
+  background-color: #f5f5f5; /* Light gray background for weekends */
+}
+
+.fc-daygrid-day.fc-day-sunday {
+  border-left: 2px solid #ddd; /* Add some separation for Sunday */
+}
